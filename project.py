@@ -18,20 +18,13 @@ import warnings
 import os
 warnings.filterwarnings('ignore')
 
-# ============= CONFIGURE YOUR DATASET PATH HERE =============
-# Use relative path - will work from the project directory
 DATASET_PATH = os.path.join(os.path.dirname(__file__), 'bixuchenggong11.CSV')
-# Alternative: Use absolute path if needed
-# DATASET_PATH = r'D:\2nd Year GLA\ML\Project\bixuchenggong11.CSV'
-# ============================================================
-
 # Page configuration
 st.set_page_config(
     page_title="Sertraline-like Activity Predictor",
     page_icon="💊",
     layout="wide"
 )
-
 # Custom CSS
 st.markdown("""
     <style>

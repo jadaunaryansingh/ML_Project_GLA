@@ -19,3 +19,4 @@ exec streamlit run project.py \
     --server.enableXsrfProtection=false \
     --browser.gatherUsageStats=false
 
+

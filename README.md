@@ -52,9 +52,11 @@ This app is configured for deployment on Render. The following files are include
 2. **Configure the service:**
    - **Name**: Your app name (e.g., "sertraline-predictor")
    - **Environment**: Python 3
-   - **Build Command**: `pip install -r requirements.txt && chmod +x setup.sh && ./setup.sh`
-   - **Start Command**: `streamlit run project.py --server.port=$PORT --server.address=0.0.0.0`
+   - **Build Command**: `pip install -r requirements.txt`
+   - **Start Command**: `streamlit run project.py --server.port=$PORT --server.address=0.0.0.0 --server.headless=true --server.enableCORS=false --server.enableXsrfProtection=false`
    - **Plan**: Free tier is sufficient for testing
+   
+   **Important**: Make sure to use `$PORT` (uppercase) in the start command!
 
 3. **Environment Variables** (if needed):
    - No environment variables required for basic deployment
